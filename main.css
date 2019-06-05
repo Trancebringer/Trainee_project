@@ -1,0 +1,55 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+i{
+	color: #f1f1f1;
+	opacity: 80%;
+}
+#headerLogo{
+	position: absolute;
+	top: 6px;
+	left: 20.5vw;
+}
+#header{
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+	margin-left: 44.43vw;
+}
+#header p{
+	color: #f3f3f3;
+}
+.images{
+	width: 501vw;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+ul > li{
+	display: inline-block;
+}
+.images img{
+	width: 100vw;
+	display: inline-block;
+}
+.slide{
+	display: none;
+}
+.show{
+	display: inline-block;
+}
+.fa-map-marker-alt{
+	padding-right: 13px;
+}
+.fa-phone{
+	padding-left: 36px;
+	padding-right: 3px;
+}
+.fa-facebook-square{
+	padding-left: 62px;
+	padding-right: 25px;
+}
