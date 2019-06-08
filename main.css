@@ -580,7 +580,7 @@ footer p{
 }
 @media(max-width: 800px){
 .menu{
-	width: 320px;
+	width: 310px;
 }
 .contentBox1{
 	width: 475px;
@@ -656,26 +656,41 @@ margin-top: 1.4375vw;
 .line{
 	height: 100px;
 	top: 210px;
-	left: 316px;
+	left: 306px;
 }
 .scrollingDot{
 	top: 210px;
-	left: 312px;
+	left: 302px;
 }
 footer{
 	height: 100px;
 }
+.hiddenMenu{
+	top: 40px;
+}
+.onBottom{
+	top: 65px;
+}
 }
 @media(max-width: 530px){
 .menu{
-	left: calc(50% - 160px);
+	left: calc(50% - 157px);
 }
 .contentBox1{
 	left: 5px;
 }
 .shadedBox1{
 	margin: 1vw 0 0 5px;
-
+}
+.hiddenMenu{
+	left: calc(50% - 115px);
+	top: 34px;
+}
+.hiddenMenu:nth-of-type(2n-1){
+	left: calc(50% - 25px);
+}
+.onBottom{
+	top: 60px;
 }
 }
 @media(max-width: 500px){
@@ -683,20 +698,20 @@ footer{
 	margin-left: calc(50% - 110px)
 }
 .contentBox1{
-	width: 320px;
+	width: 310px;
 	display: block;
-	left: calc(50% - 160px);
+	left: calc(50% - 157px);
 }
 .shadedBox1{
-	width: 320px;
-	margin-left: calc(50% - 160px);
+	width: 310px;
+	margin-left: calc(50% - 157px);
 }
 .name{
 	width: 100px;
 	margin-left: 4px;
 }
 .email{
-	width: 110px;
+	width: 100px;
 }
 .tel{
 	width: 100px;
@@ -727,15 +742,15 @@ footer{
 	margin-top: 2vw;
 }
 #header{
-	margin-left: calc(50vw - 160px);
-    width: 320px;
+	margin-left: calc(50vw - 157px);
+    width: 310px;
 }
 .menu{
 	top: 25px;
 }
 .shadedBox{
-	width: 320px;
-	margin-left: calc(50% - 160px);
+	width: 310px;
+	margin-left: calc(50% - 157px);
 }
 .contentBox1{
 	height: 35px;
@@ -745,6 +760,12 @@ footer{
 }
 #want{
 	height: 72px;
+}
+.hiddenMenu{
+	top: 36px;
+}
+.onBottom{
+	top: 50px;
 }
 }
 @media(max-width: 450px){
@@ -762,6 +783,15 @@ footer{
 .contentBox .btn{
 	top: 115px;
 }
+}
+@media(max-width: 400px){
+.wrap{
+	margin-top: 0;
+}
+#advantages h2{
+	margin-top: 7.5vw;
+}
+}
 @media(max-width: 350px){
 .column1{
 	margin-left: 2px;
@@ -770,5 +800,40 @@ footer{
 	margin: 0;
 	width: 80px;
 }
+#advantages h2{
+	margin-top: 26px;
+}
+.shadedBox{
+	height: 40px;
+}
+.hiddenMenu{
+	top: 34px;
+}
+.onBottom{
+	top: 40px;
+}
+}
+@media(max-width: 330px){
+.media330_1{
+	width: 60px;
+}
+.media330_2{
+	width: 100px;
+}
+.contentBox .btn{
+	top: 65px;
+	margin-left: calc(50% - 55px);
+}
+#headerLogo{
+	left: 10px;
+}
+footer{
+	height: 120px;
+}
+.contentArea{
+	width: 310px;
+}
+.container{
+	width: 310px;
 }
 }
