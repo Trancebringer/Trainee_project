@@ -36,29 +36,53 @@ typeOfTours.addEventListener('click', function(){
 		}
 	}
 })
-
+var contentBlocks = document.querySelectorAll('.contentBlock');
 var list = area.querySelector('ul');
-var contentArea = document.querySelector('.contentArea')
+var contentArea = document.querySelector('.contentArea');
 var count = 3;
 var position = 0; // текущий сдвиг влево
+var prevButton = contentArea.querySelector('.prev');
+var nextButton = contentArea.querySelector('.next');
+var leftOfNext = 0;
+var rightOfPrev = 0;
+var leftOfList = 0;
+var rightOfList = 0
+var elemWidth = 0;
 
-contentArea.querySelector('.prev').onclick = function() {
-	if(count > 3){
-		count -= 3;
-		position += shiftWidth;
-			position += shiftWidth/50;
+function countCoords(){
+	leftOfNext = nextButton.getBoundingClientRect().left;
+	rightOfPrev = prevButton.getBoundingClientRect().right;
+	leftOfList = list.getBoundingClientRect().left;
+	rightOfList = list.getBoundingClientRect().right;
+	elemWidth = Math.max(contentBlocks[0].getBoundingClientRect().width, contentBlocks[8].getBoundingClientRect().width);
+	shiftWidth = leftOfNext - rightOfPrev;
+}
+
+nextButton.addEventListener('click', function() {
+	countCoords();
+	if(rightOfList > leftOfNext){
+		if((rightOfList - leftOfNext) < shiftWidth * 1.02){
+			position -= (rightOfList - leftOfNext);
+		}
+		else {
+			position -= shiftWidth * 1.02;
+		}
 		list.style.marginLeft = position + 'px';
 	}
-};
+}); 
 
-contentArea.querySelector('.next').onclick = function() {
-	if(count < burningTours.length){
-		count +=3;
-		position -= shiftWidth;
-			position -= shiftWidth/50;
+prevButton.addEventListener('click', function() {
+	countCoords();
+	if(leftOfList < rightOfPrev){
+		if((rightOfPrev - leftOfList) < shiftWidth * 1.02){
+			position += (rightOfPrev - leftOfList);
+		}
+		else {
+			position += shiftWidth * 1.02;
+		}
 		list.style.marginLeft = position + 'px';
 	}
-};
+});
 var inputs = document.getElementsByTagName("input");
 var val = inputs.value;
 var buttons = document.querySelectorAll('.btn');
@@ -116,6 +140,15 @@ function stickFooter(){
 	if(wantBottomPoint >= (window_height - footer_height)){
 		footer.style.position = 'absolute';
 		footer.style.top = '102vw';
+		if(footer.getBoundingClientRect().width <= 860 && footer.getBoundingClientRect().width > 630){
+			footer.style.top = 'calc(14.4271vw + 60vw + 239px)';
+		}
+		else if(footer.getBoundingClientRect().width <= 630 && footer.getBoundingClientRect().width > 500){
+			footer.style.top = 'calc(14.4271vw + 60vw + 310px)';
+		}
+		else if(footer.getBoundingClientRect().width <= 500){
+			footer.style.top = 'calc(72px + 60vw + 310px)';
+		}
 	}
 	else{
 		

@@ -159,7 +159,7 @@ a{
 	left: 56vw;
 }
 .hiddenMenu:nth-of-type(2n-1) a{
-	width: 9.5vw;
+	width: 15vw;
 }
 .hiddenMenu a{
 	margin: 0 1.6146vw 1.05vw 1.5104vw;
@@ -209,7 +209,7 @@ a{
 	overflow: hidden;
 }
 .area ul{
-	width: 250vw;
+	width: 180vw;
 	transition: margin-left 250ms;
 }
 .arrow{
@@ -312,7 +312,7 @@ h2{
 .scrollingDot{
 	position: absolute;
 	top: 7.3958vw;
-	left: 59.1146vw;
+	left: 59vw;
 	width: 8px;
 	height: 8px;
 	border-radius: 4px;
@@ -451,13 +451,16 @@ footer p{
 	color: #c2c2c2;
 }
 .column2{
-	margin: 3.4375vw 0 0 7.65625vw;
+	margin-left: 7.65625vw;
 }
 .column3{
-	margin: 3.4375vw 0 0 5.9896vw;
+	margin-left: 5.9896vw;
 }
 .column4{
-	margin: 3.4375vw 0 0 6.7708vw;
+	margin-left: 6.7708vw;
+}
+.column{
+	margin-top: 3.4375vw
 }
 .column4 h4{
 	margin-left: 0.3125vw;
@@ -486,4 +489,286 @@ footer p{
 }
 .invalid{
 	background: red;
+}
+
+@media (max-width: 1078px){
+#header{
+	width: 435px;
+}
+}
+
+@media (max-width: 1000px){
+*{
+	font-size: 10px;
+}
+.priceString div{
+	margin-left: 1vw;
+}
+.container{
+	width: 330px;
+}
+.container p{
+	width: 282px;
+}
+#advantages{
+	width: 570px;
+}
+#advantages img{
+	width: 238px;
+}
+.line{
+	left: 574px;
+}
+.scrollingDot{
+	left: 570px;
+}
+}
+@media (max-width: 925px){
+.contentBox p{
+	margin-left: 5vw;
+}
+}
+@media(max-width: 945px){
+.typeOfTours{
+	width: 166px;
+}
+.hiddenMenu{
+	left:43vw;
+}
+}
+@media(max-width: 860px){
+.hiddenMenu:nth-of-type(2n-1) a{
+	width: 129px;
+}
+.contentBlock{
+	height: 91px;
+	width: 241px;
+}
+.area ul{
+	width: 1548px;
+}
+.area{
+	height: 91px;
+}
+#headerLogo{
+	width: 42px;
+}
+.contentBlock img{
+	width: 84px;
+}
+#header{
+	margin-left: 30vw;
+}
+#advantages{
+	top: 60vw;
+	left: calc(50% - 285px);
+}
+#want{
+	top: calc(60vw + 239px);
+}
+.scrollingDot{
+	top: 10vw;
+}
+.line{
+	top: 10vw;
+}
+}
+@media(max-width: 825px){
+.btn{
+	width: 109px;
+}
+}
+@media(max-width: 800px){
+.menu{
+	width: 320px;
+}
+.contentBox1{
+	width: 475px;
+	left: calc(50vw - 238px);
+}
+.shadedBox1{
+	width: 475px;
+	margin-left: calc(50vw - 238px);
+}
+}
+@media(max-width: 778px){
+.textBox{
+	width: 132px;
+}
+.column1{
+	margin-left: 5vw;
+}
+}
+@media(max-width: 730px){
+.column1{
+	margin-top: 0.65625vw;
+}
+.column{
+margin-top: 1.4375vw;
+}
+}
+@media(max-width: 700px){
+.contentBox p{
+	margin-left: 10px;
+}
+.shadedBox{
+	width: 480px;
+}
+.line{
+	top: 12vw;
+}
+.scrollingDot{
+	top: 12vw;
+}
+}
+@media(max-width: 630px){
+#headerLogo{
+	left: 2vw;
+	top: 4vw;
+}
+#header {
+    margin-left: calc(50vw - 218px);
+}
+.menu{
+	top: 4vw;
+}
+#advantages h2{
+	margin-left: calc(50% - 75px);
+	margin-top: 2vw;
+}
+.wrap{
+	flex-direction: column;
+	width: 320px;
+}
+#advantages{
+	width: 320px;
+	left: calc(50% - 160px)
+}
+.container{
+	height: 100px;
+}
+#want{
+	top: calc(60vw + 310px);
+}
+.switcher{
+	top: 35vw;
+}
+.line{
+	height: 100px;
+	top: 210px;
+	left: 316px;
+}
+.scrollingDot{
+	top: 210px;
+	left: 312px;
+}
+footer{
+	height: 100px;
+}
+}
+@media(max-width: 530px){
+.menu{
+	left: calc(50% - 160px);
+}
+.contentBox1{
+	left: 5px;
+}
+.shadedBox1{
+	margin: 1vw 0 0 5px;
+
+}
+}
+@media(max-width: 500px){
+#want h2{
+	margin-left: calc(50% - 110px)
+}
+.contentBox1{
+	width: 320px;
+	display: block;
+	left: calc(50% - 160px);
+}
+.shadedBox1{
+	width: 320px;
+	margin-left: calc(50% - 160px);
+}
+.name{
+	width: 100px;
+	margin-left: 4px;
+}
+.email{
+	width: 110px;
+}
+.tel{
+	width: 100px;
+}
+.contentBox1 p{
+	margin-left: calc(50% - 33px);
+}
+.contentBox1 .btn{
+	margin-left: calc(50% - 55px);
+}
+.column1{
+	width: 90px;
+}
+.contentBox p{
+	top: 17vw;
+	width: 300px;
+	text-align: center;
+	margin-left: calc(50% - 150px);
+}
+.contentBox .btn{
+	top: 25vw;
+	margin-left: calc(50% - 55px);
+}
+#advantages h2{
+	margin-top: 4vw;
+}
+.wrap{
+	margin-top: 2vw;
+}
+#header{
+	margin-left: calc(50vw - 160px);
+    width: 320px;
+}
+.menu{
+	top: 25px;
+}
+.shadedBox{
+	width: 320px;
+	margin-left: calc(50% - 160px);
+}
+.contentBox1{
+	height: 35px;
+}
+.shadedBox1{
+	height: 35px;
+}
+#want{
+	height: 72px;
+}
+}
+@media(max-width: 450px){
+#headerLogo{
+	left: calc(50% - 21px);
+    top: 35px;
+}
+.shadedBox{
+	top: 75px;
+	height: 55px;
+}
+.contentBox p{
+	top: 77px;
+}
+.contentBox .btn{
+	top: 115px;
+}
+@media(max-width: 350px){
+.column1{
+	margin-left: 2px;
+}
+.column{
+	margin: 0;
+	width: 80px;
+}
+}
 }
